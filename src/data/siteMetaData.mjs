@@ -4,7 +4,7 @@ export const siteMetadata = {
   headerTitle: "Abdull Manan",
   description: "AI Engineer",
   language: "en-us",
-  theme: "light",
+  theme: "dark",
   siteName: "abdullmanan.me",
   siteUrl: "https://abdullmanan.me",
   siteRepo: "https://github.com/look-another-one/amitchauhan-v2",
