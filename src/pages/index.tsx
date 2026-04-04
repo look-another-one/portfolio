@@ -50,7 +50,6 @@ export default function Home() {
       </Head>
       <LandingHero />
       <SkillsShowcase skills={SKILLS_DATA} />
-
     </>
   );
 }

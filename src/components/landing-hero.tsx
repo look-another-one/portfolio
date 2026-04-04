@@ -47,15 +47,15 @@ export default function LandingHero() {
             </FadeUp>
             <FadeUp key="description" duration={0.6} delay={0.2}>
               <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
-                I am an AI Engineer specializing in building
-                intelligent systems and high-performance applications. Skilled in{" "}
+                I am an AI Engineer specializing in building intelligent systems
+                and high-performance applications. Skilled in{" "}
                 <span className="font-semibold text-accent">Python</span>,{" "}
                 <span className="font-semibold text-accent">Node.js</span>,{" "}
                 <span className="font-semibold text-accent">ReactJS</span>, and
                 experienced in{" "}
                 <span className="font-semibold text-accent">Docker</span>,{" "}
-                <span className="font-semibold text-accent">Kubernetes</span> and{" "}
-                <span className="font-semibold text-accent">MySQL</span>
+                <span className="font-semibold text-accent">Kubernetes</span>{" "}
+                and <span className="font-semibold text-accent">MySQL</span>
               </div>
             </FadeUp>
           </AnimatePresence>
