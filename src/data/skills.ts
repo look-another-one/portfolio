@@ -1,4 +1,5 @@
 import { SiMysql, SiLinux, SiNixos, SiGnubash } from "react-icons/si";
+import { MdLanguage } from "react-icons/md";
 
 import { type SkillsShowcaseProps } from "@/components/skills/skills-showcase";
 
@@ -22,6 +23,14 @@ export const SKILLS_DATA: SkillsShowcaseProps["skills"] = [
       { name: "Git", icon: GitSvg },
       { name: "HTML", icon: HtmlSvg },
       { name: "CSS", icon: CsssSvg },
+    ],
+  },
+  {
+    sectionName: "Languages",
+    skills: [
+      { name: "Urdu (Native)", icon: MdLanguage },
+      { name: "English (Fluent)", icon: MdLanguage },
+      { name: "Arabic (Learning)", icon: MdLanguage },
     ],
   },
 ];
