@@ -1,13 +1,18 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Github, Instagram } from "lucide-react"
+import { Github, Instagram, Send } from "lucide-react"
 
 const socialLinks = [
   {
     href: "https://github.com/look-another-one",
     icon: Github,
     label: "GitHub",
+  },
+  {
+    href: "https://t.me/look-another-one",
+    icon: Send,
+    label: "Telegram",
   },
   {
     href: "https://www.instagram.com/letsdoshitt/",

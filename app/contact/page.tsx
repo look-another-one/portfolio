@@ -51,6 +51,15 @@ export default function ContactPage() {
                     </a>
                     <span className="text-muted-foreground">|</span>
                     <a
+                      href="https://t.me/look-another-one"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      Telegram
+                    </a>
+                    <span className="text-muted-foreground">|</span>
+                    <a
                       href="https://www.instagram.com/letsdoshitt/"
                       target="_blank"
                       rel="noopener noreferrer"
