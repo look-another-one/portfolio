@@ -45,10 +45,16 @@ export function Footer() {
       className="border-t border-border py-8 px-6"
     >
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-muted-foreground text-sm">
-          &copy;{new Date().getFullYear()} Abdull Manan
-        </p>
-        
+        <div className="flex flex-col min-[375px]:flex-row min-[375px]:items-center justify-center text-center gap-1 min-[375px]:gap-2">
+          <p className="text-muted-foreground text-sm">
+            &copy; {new Date().getFullYear()} Abdull Manan
+          </p>
+          <span className="hidden min-[375px]:inline text-muted-foreground">|</span>
+          <p className="text-muted-foreground text-sm">
+            &#9874; Built by Pratyush Kumar
+          </p>
+        </div>
+
         <div className="flex items-center gap-4">
           {socialLinks.map((link) => (
             <motion.a
