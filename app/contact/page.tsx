@@ -40,7 +40,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Social</p>
-                  <div className="flex items-center gap-3">
+                  <div className="flex flex-wrap items-center gap-3">
                     <a
                       href="https://github.com/look-another-one"
                       target="_blank"
@@ -48,6 +48,24 @@ export default function ContactPage() {
                       className="text-foreground hover:text-primary transition-colors"
                     >
                       GitHub
+                    </a>
+                    <span className="text-muted-foreground">|</span>
+                    <a
+                      href="https://www.linkedin.com/in/abdullmanan/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      LinkedIn
+                    </a>
+                    <span className="text-muted-foreground">|</span>
+                    <a
+                      href="https://www.x.com/abdull__manan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground hover:text-primary transition-colors"
+                    >
+                      Twitter
                     </a>
                     <span className="text-muted-foreground">|</span>
                     <a

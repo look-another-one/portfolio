@@ -1,13 +1,23 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Github, Instagram, Send } from "lucide-react"
+import { Github, Instagram, Send, Linkedin, Twitter } from "lucide-react"
 
 const socialLinks = [
   {
     href: "https://github.com/look-another-one",
     icon: Github,
     label: "GitHub",
+  },
+  {
+    href: "https://www.linkedin.com/in/abdullmanan/",
+    icon: Linkedin,
+    label: "LinkedIn",
+  },
+  {
+    href: "https://www.x.com/abdull__manan",
+    icon: Twitter,
+    label: "Twitter",
   },
   {
     href: "https://t.me/look-another-one",
@@ -20,7 +30,7 @@ const socialLinks = [
     label: "Instagram",
   },
   {
-    href: "https://discord.gg/abX8uftrAj",
+    href: "https://discord.gg/abX8uftrAj", 
     icon: () => (
       <svg
         width="20"

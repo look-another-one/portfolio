@@ -3,23 +3,8 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 
-const highlightedTech = ["Python", "Node.js", "ReactJS", "Docker", "Kubernetes", "MySQL"]
 
 export function Hero() {
-  const renderDescription = () => {
-    const text = "I am an AI Engineer specializing in building intelligent systems and high-performance applications. Skilled in Python, Node.js, ReactJS, and experienced in Docker, Kubernetes and MySQL"
-    
-    let result = text
-    highlightedTech.forEach((tech) => {
-      result = result.replace(
-        new RegExp(`\\b${tech}\\b`, "g"),
-        `<span class="text-primary">${tech}</span>`
-      )
-    })
-    
-    return result
-  }
-
   return (
     <section className="min-h-screen flex items-center px-6 pt-24 pb-12">
       <div className="max-w-7xl mx-auto w-full">
@@ -35,29 +20,28 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary leading-tight"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight"
             >
-              Abdull
-              <br />
-              Manan
+              You&apos;re about to <span className="text-primary">regret</span> not hiring me sooner
             </motion.h1>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl text-foreground mt-4 font-medium"
+              className="text-lg md:text-xl text-muted-foreground mt-5 leading-relaxed"
             >
-              AI Engineer
+              I&apos;m <span className="text-foreground font-semibold">Abdull Manan</span>. I build AI systems that solve real problems. My salary isn&apos;t a <span className="text-primary font-medium">cost</span> — it&apos;s your best <span className="text-primary font-medium">investment</span>.
             </motion.p>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-base md:text-lg text-muted-foreground mt-6 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: renderDescription() }}
-            />
+              className="text-sm text-muted-foreground/60 mt-6 pt-4 border-t border-border italic"
+            >
+              Source: Trust Me
+            </motion.p>
           </motion.div>
 
           {/* Right content - Profile Image */}
