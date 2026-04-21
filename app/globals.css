@@ -122,5 +122,9 @@
   }
   body {
     @apply bg-background text-foreground;
+    cursor: none;
+  }
+  a, button, input, textarea, select, [role="button"], label {
+    cursor: none;
   }
 }

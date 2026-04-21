@@ -3,6 +3,7 @@ import { Space_Grotesk, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { CustomCursor } from '@/components/custom-cursor'
 import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({ 
@@ -37,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <body className={`${spaceGrotesk.variable} ${inter.variable} font-sans antialiased bg-background text-foreground min-h-screen`}>
+        <CustomCursor />
         <Header />
         <main>{children}</main>
         <Footer />

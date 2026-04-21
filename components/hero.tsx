@@ -3,7 +3,6 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 
-
 export function Hero() {
   return (
     <section className="min-h-screen flex items-center px-6 pt-24 pb-12">
@@ -40,25 +39,36 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-sm text-muted-foreground/60 mt-6 pt-4 border-t border-border italic"
             >
-              Source: Trust Me
+              Source: Trust Me 🙂
             </motion.p>
           </motion.div>
 
-          {/* Right content - Profile Image */}
+          {/* Right content - Framed Profile Image */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            whileHover={{ scale: 1.02 }}
             className="flex-1 flex justify-center lg:justify-end"
           >
-            <div className="relative w-[300px] h-[450px] md:w-[400px] md:h-[600px] lg:w-[450px] lg:h-[675px]">
-              <Image
-                src="/homeprofile.png"
-                alt="Abdull Manan - AI Engineer"
-                fill
-                className="object-contain object-center"
-                priority
-              />
+            <div className="relative">
+              {/* Teal offset frame behind image */}
+              <div className="absolute -bottom-4 -right-4 w-full h-full bg-primary/30 rounded-lg" />
+              <motion.div
+                className="relative w-[280px] h-[400px] md:w-[350px] md:h-[500px] lg:w-[400px] lg:h-[550px] rounded-lg overflow-hidden border-4 border-primary/50 shadow-lg"
+                whileHover={{
+                  boxShadow: "0 20px 40px rgba(16, 185, 129, 0.3)",
+                }}
+                transition={{ duration: 0.3 }}
+              >
+                <Image
+                  src="/heroProfile.png"
+                  alt="Abdull Manan - AI Engineer"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </motion.div>
             </div>
           </motion.div>
         </div>
