@@ -53,7 +53,7 @@ const socialLinks = [
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/letsdoshitt/",
+    href: "https://www.instagram.com/abdullmanan.dev/",
     color: "#e1306c",
     glow: "rgba(225,48,108,0.4)",
     icon: (

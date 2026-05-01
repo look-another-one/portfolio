@@ -25,7 +25,7 @@ const socialLinks = [
     label: "Telegram",
   },
   {
-    href: "https://www.instagram.com/letsdoshitt/",
+    href: "https://www.instagram.com/abdullmanan.dev/",
     icon: Instagram,
     label: "Instagram",
   },
